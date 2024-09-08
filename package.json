@@ -4,9 +4,21 @@
   "description": "Testing websockets with clients that connect to a central background app that keeps the progress of a long runnning process",
   "private": true,
   "workspaces": [
-    "project1",
-    "project2"
+    "nest-web-client",
+    "nest-web-tracker"
   ],
   "author": "Stu",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "build:client": "npm run build --workspace=nest-web-client",
+    "test:client": "npm run test --workspace=nest-web-client",
+    "eject:client": "npm run eject --workspace=nest-web-client",
+    "build:server": "npm run build --workspace=nest-web-tracker",
+    "format:server": "npm run format --workspace=nest-web-tracker",
+    "start:server": "npm run start --workspace=nest-web-tracker",
+    "start:dev:server": "npm run start:dev --workspace=nest-web-tracker",
+    "start:debug:server": "npm run start:debug --workspace=nest-web-tracker",
+    "start:prod:server": "npm run start:prod --workspace=nest-web-tracker",
+    "lint:server": "npm run lint --workspace=nest-web-tracker"
+  }
 }
