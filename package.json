@@ -1,0 +1,12 @@
+{
+  "name": "websockets",
+  "version": "1.0.0",
+  "description": "Testing websockets with clients that connect to a central background app that keeps the progress of a long runnning process",
+  "private": true,
+  "workspaces": [
+    "project1",
+    "project2"
+  ],
+  "author": "Stu",
+  "license": "ISC"
+}
